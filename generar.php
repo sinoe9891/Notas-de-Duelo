@@ -4,11 +4,11 @@
   <?php require_once('includes/header.php'); ?>
 <body >
 <?php require_once('includes/nav.php'); ?>
-  
+
 <main class="container">
   	<div class="card">
   		<div class="card-content">
-	    	<div class="row"> 
+	    	<div class="row">
 	      		<div align="center" class="col s12 m12 l12">
 	      		<h3>Notas de duelo</h3>
 	        		<form>
@@ -46,7 +46,7 @@
 					    <div class="row">
 					        <div class="col s12 m12">
 					          	<div class="card grey lighten-5">
-					            	<div class="card-content" id="contenido"> 
+					            	<div class="card-content" id="contenido">
 
 
 
@@ -60,21 +60,21 @@
 				          		</div>
 				        	</div>
 				    	</div>
-				    	
+
 	        		</form>
-	    		</div> 
+	    		</div>
 	   		</div>
-		   <div class="row"> 
+		   <div class="row">
 		      	<div align="center" class="col s12 m12 l12">
 		      	<a class="waves-effect waves-light btn-large" id="generar"><i class="material-icons right">file_download</i>Descargar pdf</a>
-		    	</div> 
-		   </div> 
+		    	</div>
+		   </div>
 		</div>
    	</div>
 <div class="row">
 	<div class="col s12">
 	    <div class="video-container"><iframe src="" id="frame" height="500px"></iframe></div>
-		
+
 	</div>
 
 	<p id="test" style="font-family: HelveticaThin; "">hello</p>
@@ -106,10 +106,10 @@
 		})
 	}
 
-	
+
 //Graduado de la clase 47 en Zamorano
 
-	
+
 	// inputs.forEach(listen);
 	// function listen(index, element){
 	// 	var id = document.getElementById(index);
@@ -125,7 +125,7 @@
 	generar.addEventListener('click', function(){
 
 		console.log(inputsEmpleado);
-		
+
 		var fechaF = ['enero','febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
 		var fechaa = new Date(inputs.fecha);
 		//var timezoneoffset = 240; // gmt-5, == 240 (minutes)
@@ -142,7 +142,7 @@
 
 
 		var fechaN = new Date();
-		
+
 
 		doc.addImage(imgData, 'JPEG', 0.75, 0.41, 7, 10.25)
 
@@ -176,7 +176,7 @@
 		if(inputEmpleado.empleado){
 			var text='';
 			if(inputsEmpleado.genero=='f'){text=' de nuestra compañera'}else if(inputsEmpleado.genero=='m'){text=' de nuestro compañero '}
-			
+
 			 doc.text(inputsEmpleado.parentesco+text+inputsEmpleado.nombreEmpleado, 4.25, 5.7, 'center') }
 		if(inputs.labora){
 		doc.text('El '+inputs.titulo+'. '+inputs.apellidos+' fue empleado de Zamorano ', 4.25, 6.25, 'center')
@@ -193,9 +193,9 @@
 
 		doc.setFontSize(8);
 		doc.text('Campus Zamorano, '+fechaN.getDate()+' de '+fechaF[fechaN.getMonth()]+' del '+fechaN.getFullYear(), 4.25, 8.5, 'center')
-		
-		
-		
+
+
+
 
 
 
@@ -204,7 +204,7 @@
 
 
 
-	
+
 
 	zamorano.addEventListener('click', function(){
 		var year = new Date();
@@ -226,7 +226,7 @@
 	}
 
 	})
-	
+
 	empleado.addEventListener('click', function(){
 	document.getElementById('contenido').innerHTML='<div class="row"><div class="input-field col s6 m6 l6"><select class="browser-default" id="parentesco" ><option value="" disabled selected>Selecciona un tipo de parentesco</option><option value="Padre" >Padre</option><option value="Abuelo">Abuelo</option><option value="Tio">Tio</option><option value="Hermano">Hermano</option><option value="Primo">Primo</option><option value="Esposo">Esposo</option><option value="Hijo">Hijo</option><option value="Nieto">Nieto</option><option value="Sobrino">Sobrino</option></select></div><div class="input-field col s6 m6 l6"><select class="browser-default" id="genero" ><option value="" disabled selected>Selecciona un Genero</option><option value="f" >Femenino</option><option value="m">Maculino</option></select></div></div><div class="row"><div class="input-field col s12 m12 l12"> <input id="nombreEmpleado" name="nombreEmpleado" type="text" class="validate"> <label for="nombreEmpleado">Nombre del empleado</label> </div></div>';
 		empleado.children[0].textContent='check_circle';
@@ -249,8 +249,3 @@
 <?php require_once('includes/footer.php'); ?>
   </body>
 </html>
-
-
-
-
-
