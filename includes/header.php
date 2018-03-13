@@ -3,7 +3,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="description" content="Zamorano es una Universidad internacional que ofrece a jóvenes de diversas latitudes y orígenes la oportunidad de convertirse en líderes profesionales.">
     <meta name="keywords" content="agricultura, la, mejor, mundo, university, universidad, agronomia, desarrollo, ambiente, agronegocios, alumni oportunies, faculty positions, feed ecoin, zamorano news, zamorano voices, Samuel Zemurray, eap, wilson, popenoe">
-    <meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1.0 maximun-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Perfiles de Graduados | Universidad Zamorano</title>
     <link rel="icon" href="./img/favicon.png" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
